@@ -15,7 +15,7 @@ public class DataBase {
 	}
 	
 	public void insertInDataBase(String username, String password) throws SQLException {
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "TarZan13");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "password");
 		String query = " insert into accounts (username, password, id)" + " values (?, ?, ?)";
 		PreparedStatement preparedStmt = con.prepareStatement(query);
 	    preparedStmt.setString (1, username);
