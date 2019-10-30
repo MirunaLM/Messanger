@@ -11,7 +11,7 @@ public class DataBase {
 	
 	public void DataBase() throws ClassNotFoundException, SQLException {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "TarZan13");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/login", "root", "password");
 	}
 	
 	public void insertInDataBase(String username, String password) throws SQLException {
